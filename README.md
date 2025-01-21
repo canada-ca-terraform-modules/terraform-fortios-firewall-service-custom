@@ -26,7 +26,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_services"></a> [services](#input\_services) | List of custom firewall services | map(object()) | n/a | yes |
+| <a name="input_services"></a> [services](#input\_services) | List of custom firewall services | `map(object())` | n/a | yes |
 
 ## Outputs
 

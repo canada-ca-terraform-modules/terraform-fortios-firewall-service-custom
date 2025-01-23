@@ -1,4 +1,19 @@
 <!-- BEGIN_TF_DOCS -->
+```hcl
+module "my_services" {
+  source = "https://github.com/canada-ca-terraform-modules/terraform-fortios-firewall-service-custom"
+  providers = {
+    fortios = fortios.my_alias
+  }
+
+  services = {
+    weird_service = {
+      protocol = "TCP"
+      tcp_portrange = "5345-5350"
+    }
+  }
+}
+```
 ## Requirements
 
 | Name | Version |

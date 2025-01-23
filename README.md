@@ -8,7 +8,7 @@ module "my_services" {
 
   services = {
     weird_service = {
-      protocol = "TCP"
+      protocol      = "TCP"
       tcp_portrange = "5345-5350"
     }
   }
